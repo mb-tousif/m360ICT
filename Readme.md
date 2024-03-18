@@ -33,3 +33,19 @@
 - [x] Get Single Artist `GET /api/v1/artists/:id`
 - [x] Update Artist `PATCH /api/v1/artists/update/:id`
 - [x] Delete Artist `DELETE /api/v1/artists/delete/:id`
+
+#### Album
+
+- [x] Create Album `POST /api/v1/albums/create`
+- [x] Get All Album `GET /api/v1/albums/all-albums`
+- [x] Get Single Album `GET /api/v1/albums/:id`
+- [x] Update Album `PATCH /api/v1/albums/update/:id`
+- [x] Delete Album `DELETE /api/v1/albums/delete/:id`
+
+#### Song
+
+- [x] Create Song `POST /api/v1/songs/create`
+- [x] Get All Song `GET /api/v1/songs/all-songs`
+- [x] Get Single Song `GET /api/v1/songs/:id`
+- [x] Update Song `PATCH /api/v1/songs/update/:id`
+- [x] Delete Song `DELETE /api/v1/songs/delete/:id`
