@@ -3,7 +3,7 @@ const sendResponse = (res, data) => {
     statusCode: data.statusCode,
     success: data.success,
     message: data.message,
-    data: data
+    data: data.data
   };
 
   res.status(data.statusCode).json(responseData);

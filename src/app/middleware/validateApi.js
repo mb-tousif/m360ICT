@@ -1,25 +1,12 @@
+import Joi from 'joi';
+import ApiError from '../../shared/ApiError.js';
 
-const validateRequest = (schema) => {
-  return async (req, res, next) => {
-    try {
-      const validationOptions = {
-        abortEarly: false,
-        allowUnknown: true,
-        stripUnknown: true,
-      };
-
-      const { body, query, params, cookies } = req;
-      const validationResult = schema.validate(
-        { body, query, params, cookies },
-        validationOptions
-      );
-
-      req.validatedData = validationResult.value;
-      next();
-    } catch (error) {
-      next(error);
-    }
-  };
+const validateRequest = (schema) => (req, res, next) => {
+  const { error } = Joi.validate(req.body, schema);
+  if (error) {
+    throw new ApiError(400, error.details[0].message);
+  }
+  next();
 };
 
 export default validateRequest;

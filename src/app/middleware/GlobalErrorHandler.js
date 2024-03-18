@@ -1,4 +1,3 @@
-import ValidationError from "joi";
 import config from "../../config/index.js";
 import ApiError from "../../shared/ApiError.js";
 // import handleJoiError from "../../shared/handleJoiError.js";
