@@ -25,3 +25,11 @@
 - [x] Get Single User `GET /api/v1/users/:id`
 - [x] Update User `PATCH /api/v1/users/:id`
 - [x] Delete User `DELETE /api/v1/users/:id`
+
+#### Artist
+
+- [x] Create Artist `POST /api/v1/artists/create`
+- [x] Get All Artist `GET /api/v1/artists/all-artists`
+- [x] Get Single Artist `GET /api/v1/artists/:id`
+- [x] Update Artist `PATCH /api/v1/artists/update/:id`
+- [x] Delete Artist `DELETE /api/v1/artists/delete/:id`

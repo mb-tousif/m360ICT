@@ -2,7 +2,7 @@ import knex from "knex";
 
 export const up = function (knex) {
   return knex.schema.createTable("songs", function (table) {
-    table.uuid("id").primary();
+    table.uuid("id").primary().defaultTo(knex.raw("uuid_generate_v4()"));
     table.string("title").notNullable();
     table.integer("duration").notNullable();
     table.uuid("album_id").references("id").inTable("albums").notNullable();
